@@ -1,0 +1,113 @@
+# XcodeGen 工程定义：在本目录执行 `xcodegen generate` 生成 MolaGPT.xcodeproj。
+# 模块依赖仍以 ../Package.swift 为准；这里只定义 App 与两个扩展的 Xcode target，
+# 它们直接编译各自源码，并依赖本地包导出的 MolaCore / MolaStorage / MolaActivity。
+# xtool 构建（../xtool.yml）不受影响。
+name: MolaGPT
+
+options:
+  bundleIdPrefix: com.molagpt
+  deploymentTarget:
+    iOS: "17.0"
+  developmentLanguage: zh-Hans
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+packages:
+  MolaGPT:
+    path: ..
+  SwiftMath:
+    url: https://github.com/mgriebling/SwiftMath
+    exactVersion: 1.7.3
+
+settings:
+  base:
+    # 签名：在 Xcode 中为三个 target 选择自己的 Team，或在此填入 DEVELOPMENT_TEAM。
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: ""
+    MARKETING_VERSION: 0.1.0
+    CURRENT_PROJECT_VERSION: 1
+    SWIFT_VERSION: "6.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    # 各 Info.plist 只写业务键，标准键（CFBundleIdentifier、CFBundleExecutable 等）由 Xcode 合并生成。
+    GENERATE_INFOPLIST_FILE: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+
+targets:
+  MolaGPTApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: ../Sources/MolaGPT
+      - path: ../Resources/Icons
+        buildPhase: resources
+        excludes:
+          - iTunesArtwork.png
+    settings:
+      base:
+        PRODUCT_NAME: MolaGPT
+        PRODUCT_MODULE_NAME: MolaGPTApp
+        PRODUCT_BUNDLE_IDENTIFIER: com.molagpt.app
+        INFOPLIST_FILE: ../Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: ../Resources/MolaGPT.entitlements
+    dependencies:
+      - package: MolaGPT
+        product: MolaCore
+      - package: MolaGPT
+        product: MolaStorage
+      - package: MolaGPT
+        product: MolaActivity
+      - package: SwiftMath
+        product: SwiftMath
+      - target: MolaShareExtension
+      - target: MolaWidgetsExtension
+
+  MolaShareExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: ../Sources/MolaShare
+    settings:
+      base:
+        PRODUCT_NAME: MolaShare
+        PRODUCT_MODULE_NAME: MolaShareExtension
+        PRODUCT_BUNDLE_IDENTIFIER: com.molagpt.app.MolaShare
+        INFOPLIST_FILE: ../Resources/MolaShare-Info.plist
+        CODE_SIGN_ENTITLEMENTS: ../Resources/MolaShare.entitlements
+        # NSItemProvider 回调不是 Sendable，与 Package.swift 一致使用 Swift 5 语言模式。
+        SWIFT_VERSION: "5.0"
+        APPLICATION_EXTENSION_API_ONLY: YES
+    dependencies:
+      - package: MolaGPT
+        product: MolaCore
+
+  MolaWidgetsExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: ../Sources/MolaWidgets
+    settings:
+      base:
+        PRODUCT_NAME: MolaWidgets
+        PRODUCT_MODULE_NAME: MolaWidgetsExtension
+        PRODUCT_BUNDLE_IDENTIFIER: com.molagpt.app.MolaWidgets
+        INFOPLIST_FILE: ../Resources/MolaWidgets-Info.plist
+        APPLICATION_EXTENSION_API_ONLY: YES
+        # 启用 MolaWidgetBundle 上的 @main（xtool 构建改用自定义入口 _MolaWidgetsMain）。
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited) XCODE_BUILD
+    dependencies:
+      - package: MolaGPT
+        product: MolaActivity
+
+schemes:
+  MolaGPT:
+    build:
+      targets:
+        MolaGPTApp: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - package: MolaGPT/MolaCoreTests
+    archive:
+      config: Release

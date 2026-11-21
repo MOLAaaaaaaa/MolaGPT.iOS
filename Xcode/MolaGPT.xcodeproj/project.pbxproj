@@ -1,0 +1,1005 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011A88256858754842FB485F /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 627C5D51EC66E68E81C3CA6F /* AppIcon60x60@2x.png */; };
+		0E11C1CFB5CCB3B1253C4D37 /* ImageTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E72FE406A8F0C17922305BB /* ImageTaskManager.swift */; };
+		0F34A670246F585AC4C232C6 /* ContextGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ABE5C56A4820B75E69BB86 /* ContextGaugeView.swift */; };
+		154E30409FABBDC9C59A9A4F /* BackgroundGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5CF6E35C335C1E96A0ADB5 /* BackgroundGuard.swift */; };
+		16D62B8EB14A734EE8E9981F /* RoleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED05F9F68FF4F0FEA8A8F60D /* RoleEngine.swift */; };
+		2311E3AD3E3D07FC5798D086 /* AppToolExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E190813DF8FBAED8A5CB7 /* AppToolExecutor.swift */; };
+		23E6F4EBE78AABCFAE8A6790 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66140AC23D2B85C1E99E17E9 /* AccountView.swift */; };
+		27BEE233E5B6E2DE687DE9DA /* MermaidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F96F0A4AAFFE7839FD916 /* MermaidView.swift */; };
+		284A503026E7DCF095FC2ADF /* SwiftMath in Frameworks */ = {isa = PBXBuildFile; productRef = 48CF9F950C8001F7FC9B91A7 /* SwiftMath */; };
+		28E666748D2483836032AC2A /* Notices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D674AF536B7D9CC8C489334 /* Notices.swift */; };
+		2A48BC002B42C20BED18BD4B /* ShareImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E841223B64B851F0EC5AAF6 /* ShareImporter.swift */; };
+		34231683C81B373E77AD9E24 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B397899A18975334A084C /* ChatView.swift */; };
+		355A3939FD8069C6AE3B301E /* MemorySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E317280CD8686DE9F6E293 /* MemorySettingsView.swift */; };
+		3A845B0596A49992ED957C30 /* ComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C99D73118F11622F8DE4564 /* ComposerView.swift */; };
+		3D4A056B95FA4A274653056F /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3EA1E2CCCCDF8A111F491 /* ChatController.swift */; };
+		40DD1415FF53D6F44B7416D8 /* MolaCore in Frameworks */ = {isa = PBXBuildFile; productRef = CEFFD5DA182842155C5DBB12 /* MolaCore */; };
+		42B8EE82AAAC53BADFDF893D /* MolaActivity in Frameworks */ = {isa = PBXBuildFile; productRef = 636A13E3CF4BBA6D251CE84A /* MolaActivity */; };
+		469E62ED05F14DCDBDC82276 /* MiniZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEAB011E48A5B82DBFA366 /* MiniZip.swift */; };
+		46AB84503F739133845A2D89 /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8148F68BC57C01B3FA1D7D9C /* SyncService.swift */; };
+		49819E2548CBE25A47FFE8CE /* MolaChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5AE2928B2C5911FEC6F01 /* MolaChatService.swift */; };
+		517FD6F8DD0290E0A3B1411B /* SkillService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA0E3DF8A2570480A62702 /* SkillService.swift */; };
+		58F8E8A319387910617AB3B3 /* MemoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35462C8C9056A42B260A8967 /* MemoryService.swift */; };
+		594380CD0DD2119957385C6F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9D4BCA2703A77666BF474C /* SettingsView.swift */; };
+		5F31CD8D23A1592CCC575984 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ECCC212543DB879329D6DC /* AppModel.swift */; };
+		5FA90C47627B307E8805FA37 /* ToolsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08156899D23F3AD3A24B1E67 /* ToolsSettingsView.swift */; };
+		5FF8D5E8A4FD051EF0C7E998 /* ProvidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9095D866C532964FB46C482 /* ProvidersView.swift */; };
+		63651D5D70E1AC6E3271192D /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50DCB73B6C39D4B26AAB33A /* MarkdownView.swift */; };
+		6B3D6D3B8A544ECF4BD1C861 /* HtmlRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EE6BDF6F85E5EFFECE259D /* HtmlRunner.swift */; };
+		6FA1C29E47A24D2EE954CDE4 /* DesktopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879B0BA640A567CF9122B38 /* DesktopsView.swift */; };
+		731974726CAFBF4077D8ECCC /* ModelPricingFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736F150260B60626EA775DD /* ModelPricingFetch.swift */; };
+		747C55B0A42D2CC6CEC7D18E /* MathRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742835B1FF7BCAE26F9A228A /* MathRenderer.swift */; };
+		7F4A82A506A6FCA4507B3829 /* MolaShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3E35F23B4D807700E4D57528 /* MolaShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		80EBEC9F9D6308040CAC4627 /* MolaActivity in Frameworks */ = {isa = PBXBuildFile; productRef = 68946EF40AF0539A01BE3BEF /* MolaActivity */; };
+		81B020F141BA99A723490F65 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75142193CC61E0A0AD50030A /* Entry.swift */; };
+		89BFE779EE8659D7D253EC4F /* MolaWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DE630B8DEDACB979B8B9D5B2 /* MolaWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8CBB45B39A0AE460F9486D33 /* TurnPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF1513617738C40349D6202 /* TurnPlanner.swift */; };
+		8D4B0C1301F36F45E19E5105 /* LaunchPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A902878E0348C2DFFA1491 /* LaunchPermissions.swift */; };
+		8E222B5266CFFA787C2FB589 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EF883C85CB5DBAAC64A0DF /* AccountManager.swift */; };
+		8F025B1B9CB24B6EE8B8851D /* AgentControlViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FAED631851A1A5AA671351 /* AgentControlViews.swift */; };
+		92C922E08E3F3B4AD426290D /* Attachments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEF8E8BE7FFAB91A1197BF8 /* Attachments.swift */; };
+		931BCEE501E458CC816D3AFC /* CompactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0F6394BAB2A64E767BC1C /* CompactionService.swift */; };
+		9DC9CD22737B0BD777CEB6FB /* ImageWorkbenchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D62D69696D1084690DE40 /* ImageWorkbenchView.swift */; };
+		A8B22CDF9937244E8FFE71D8 /* MolaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41761AB5D6B13D47CF837A3F /* MolaSession.swift */; };
+		ABCF671A00EC0349E6F6FAFE /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE39C1A4189CC32AB1C4536 /* ShareViewController.swift */; };
+		B093AD5D8A6CF8A43C1D7537 /* MessageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A704DE250EC55A214425A5 /* MessageViews.swift */; };
+		B548DB442D9658E2491808C9 /* AppIcon76x76~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A67CD7A19D05E7764E2769C /* AppIcon76x76~ipad.png */; };
+		B725385CBEA67C48B45E4D50 /* ConversationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3248ECA584A811AC76A44B70 /* ConversationListView.swift */; };
+		B85EA5065BF141798B5A005F /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45278FB38BD7449D4B535B58 /* SkillsView.swift */; };
+		C1CF048FEB49CCDFB0BE77D9 /* DesktopRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CF25F5FB82DBF38865977 /* DesktopRemoteService.swift */; };
+		C1E497CD6437F39686177D53 /* ToolViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482DBF61A4DC787B7DF3A91 /* ToolViews.swift */; };
+		C4C93A2E7456D67AEC03A0C6 /* MolaStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 777C0C0BC971FEA37B6D09E3 /* MolaStorage */; };
+		C5B1E706912E2F73518A1A7C /* MolaCore in Frameworks */ = {isa = PBXBuildFile; productRef = 41E3F9C9E3B917C6F7A4AF34 /* MolaCore */; };
+		CEE84D1F6F3A71A3791BCFEF /* AppIcon60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 623616E1BBE35CA411004EAD /* AppIcon60x60@3x.png */; };
+		D1DD503E8D99B4B98A595039 /* AppIcon76x76@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB4A79F0708210A1DFFAE8E /* AppIcon76x76@2x~ipad.png */; };
+		D3DF5428EEE0122B7BD47C75 /* LiveActivityCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AE8F8FAA9053B0876F7DE4 /* LiveActivityCenter.swift */; };
+		D46377DD11693AC52E4A68C0 /* AppIcon83.5x83.5@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4570F5DC608A37E3D23A87F0 /* AppIcon83.5x83.5@2x~ipad.png */; };
+		E5C644711172A35A34090F93 /* MolaGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD37F7A8452C7E2C645D12F /* MolaGPTApp.swift */; };
+		E8AF29273501ADD53182DEA1 /* VisualViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474A3C8C25FF0B61509BE47 /* VisualViews.swift */; };
+		E9FB02429E89F684077579FB /* PersonaViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587FF1874223A12A58134BF8 /* PersonaViews.swift */; };
+		F129E298AF44E04F012F5E28 /* MolaLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E963FA6BE40D6E646CF122 /* MolaLiveActivity.swift */; };
+		F7FCD188E97152D464D88CC2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3E3128E17E48E3BC9F144 /* Theme.swift */; };
+		F9D1CA5225D4E9C25BCB8974 /* LinkOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A12FE5C52437D1A12CE8EE /* LinkOpener.swift */; };
+		FD1ADBA72EEAC2ED7770A102 /* PersonalizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1561962B52AFB4E401EF2A7 /* PersonalizationView.swift */; };
+		FD4A4970361B013E53594E58 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7477CB7716B077E1391671 /* RootView.swift */; };
+		FFCE0D204080543124120338 /* ModelEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB67867CF6363660363DF8A /* ModelEditView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43DB19E556FCB24BD7AF24FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DE8DB6271DA448D319467E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCDE181C43763F2955E634FA;
+			remoteInfo = MolaWidgetsExtension;
+		};
+		7CBBA707C2D510CEC13F3306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DE8DB6271DA448D319467E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44A02C434DE34F5C9151F20F;
+			remoteInfo = MolaShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA0BDF5723C786646CD0D4E0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7F4A82A506A6FCA4507B3829 /* MolaShareExtension.appex in Embed Foundation Extensions */,
+				89BFE779EE8659D7D253EC4F /* MolaWidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08156899D23F3AD3A24B1E67 /* ToolsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsSettingsView.swift; sourceTree = "<group>"; };
+		11A12FE5C52437D1A12CE8EE /* LinkOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkOpener.swift; sourceTree = "<group>"; };
+		19AE8F8FAA9053B0876F7DE4 /* LiveActivityCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityCenter.swift; sourceTree = "<group>"; };
+		1E72FE406A8F0C17922305BB /* ImageTaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTaskManager.swift; sourceTree = "<group>"; };
+		20A704DE250EC55A214425A5 /* MessageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViews.swift; sourceTree = "<group>"; };
+		25B0F6394BAB2A64E767BC1C /* CompactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactionService.swift; sourceTree = "<group>"; };
+		3248ECA584A811AC76A44B70 /* ConversationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListView.swift; sourceTree = "<group>"; };
+		34A902878E0348C2DFFA1491 /* LaunchPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPermissions.swift; sourceTree = "<group>"; };
+		35462C8C9056A42B260A8967 /* MemoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryService.swift; sourceTree = "<group>"; };
+		373E190813DF8FBAED8A5CB7 /* AppToolExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppToolExecutor.swift; sourceTree = "<group>"; };
+		3A67CD7A19D05E7764E2769C /* AppIcon76x76~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76~ipad.png"; sourceTree = "<group>"; };
+		3E35F23B4D807700E4D57528 /* MolaShareExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MolaShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB67867CF6363660363DF8A /* ModelEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelEditView.swift; sourceTree = "<group>"; };
+		41761AB5D6B13D47CF837A3F /* MolaSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MolaSession.swift; sourceTree = "<group>"; };
+		45278FB38BD7449D4B535B58 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
+		4570F5DC608A37E3D23A87F0 /* AppIcon83.5x83.5@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon83.5x83.5@2x~ipad.png"; sourceTree = "<group>"; };
+		4C99D73118F11622F8DE4564 /* ComposerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerView.swift; sourceTree = "<group>"; };
+		4F5CF6E35C335C1E96A0ADB5 /* BackgroundGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGuard.swift; sourceTree = "<group>"; };
+		518CF25F5FB82DBF38865977 /* DesktopRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopRemoteService.swift; sourceTree = "<group>"; };
+		51ECCC212543DB879329D6DC /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		51FAED631851A1A5AA671351 /* AgentControlViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentControlViews.swift; sourceTree = "<group>"; };
+		52ABE5C56A4820B75E69BB86 /* ContextGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextGaugeView.swift; sourceTree = "<group>"; };
+		54F3EA1E2CCCCDF8A111F491 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		587FF1874223A12A58134BF8 /* PersonaViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaViews.swift; sourceTree = "<group>"; };
+		58EE6BDF6F85E5EFFECE259D /* HtmlRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlRunner.swift; sourceTree = "<group>"; };
+		619D62D69696D1084690DE40 /* ImageWorkbenchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWorkbenchView.swift; sourceTree = "<group>"; };
+		623616E1BBE35CA411004EAD /* AppIcon60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@3x.png"; sourceTree = "<group>"; };
+		627C5D51EC66E68E81C3CA6F /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		66140AC23D2B85C1E99E17E9 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		6C7477CB7716B077E1391671 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		6DD37F7A8452C7E2C645D12F /* MolaGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MolaGPTApp.swift; sourceTree = "<group>"; };
+		742835B1FF7BCAE26F9A228A /* MathRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathRenderer.swift; sourceTree = "<group>"; };
+		75142193CC61E0A0AD50030A /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		75CEAB011E48A5B82DBFA366 /* MiniZip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniZip.swift; sourceTree = "<group>"; };
+		7879B0BA640A567CF9122B38 /* DesktopsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopsView.swift; sourceTree = "<group>"; };
+		7DF1513617738C40349D6202 /* TurnPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnPlanner.swift; sourceTree = "<group>"; };
+		8148F68BC57C01B3FA1D7D9C /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
+		8D674AF536B7D9CC8C489334 /* Notices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notices.swift; sourceTree = "<group>"; };
+		8E841223B64B851F0EC5AAF6 /* ShareImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareImporter.swift; sourceTree = "<group>"; };
+		8FEF8E8BE7FFAB91A1197BF8 /* Attachments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attachments.swift; sourceTree = "<group>"; };
+		956D150D948FAC58B19AC28E /* MolaGPT */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MolaGPT; path = ..; sourceTree = SOURCE_ROOT; };
+		95EF97C6938F5845956076EF /* MolaGPTApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MolaGPTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E963FA6BE40D6E646CF122 /* MolaLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MolaLiveActivity.swift; sourceTree = "<group>"; };
+		9AAA0E3DF8A2570480A62702 /* SkillService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillService.swift; sourceTree = "<group>"; };
+		9AB4A79F0708210A1DFFAE8E /* AppIcon76x76@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76@2x~ipad.png"; sourceTree = "<group>"; };
+		A1561962B52AFB4E401EF2A7 /* PersonalizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationView.swift; sourceTree = "<group>"; };
+		A1E317280CD8686DE9F6E293 /* MemorySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorySettingsView.swift; sourceTree = "<group>"; };
+		AA4B397899A18975334A084C /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		B482DBF61A4DC787B7DF3A91 /* ToolViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolViews.swift; sourceTree = "<group>"; };
+		C3EF883C85CB5DBAAC64A0DF /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		C736F150260B60626EA775DD /* ModelPricingFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPricingFetch.swift; sourceTree = "<group>"; };
+		CAE39C1A4189CC32AB1C4536 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		CE2F96F0A4AAFFE7839FD916 /* MermaidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MermaidView.swift; sourceTree = "<group>"; };
+		CF9D4BCA2703A77666BF474C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DE630B8DEDACB979B8B9D5B2 /* MolaWidgetsExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MolaWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED05F9F68FF4F0FEA8A8F60D /* RoleEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleEngine.swift; sourceTree = "<group>"; };
+		EDE5AE2928B2C5911FEC6F01 /* MolaChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MolaChatService.swift; sourceTree = "<group>"; };
+		F474A3C8C25FF0B61509BE47 /* VisualViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualViews.swift; sourceTree = "<group>"; };
+		F50DCB73B6C39D4B26AAB33A /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
+		F9095D866C532964FB46C482 /* ProvidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersView.swift; sourceTree = "<group>"; };
+		FAE3E3128E17E48E3BC9F144 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72B10C8A5F762CC65BC02444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80EBEC9F9D6308040CAC4627 /* MolaActivity in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F187795AF6A27C58E0CA5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DD1415FF53D6F44B7416D8 /* MolaCore in Frameworks */,
+				C4C93A2E7456D67AEC03A0C6 /* MolaStorage in Frameworks */,
+				42B8EE82AAAC53BADFDF893D /* MolaActivity in Frameworks */,
+				284A503026E7DCF095FC2ADF /* SwiftMath in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F590D267D5E58AE2F66FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5B1E706912E2F73518A1A7C /* MolaCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		166DD0F83ED0636E3C259032 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3FB67867CF6363660363DF8A /* ModelEditView.swift */,
+				C736F150260B60626EA775DD /* ModelPricingFetch.swift */,
+				F9095D866C532964FB46C482 /* ProvidersView.swift */,
+				CF9D4BCA2703A77666BF474C /* SettingsView.swift */,
+				08156899D23F3AD3A24B1E67 /* ToolsSettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		26E9519EEE3EDC6B12AF6163 /* MolaGPT */ = {
+			isa = PBXGroup;
+			children = (
+				3A2F58EF00EF0915C281B1AF /* Account */,
+				7CD2D7744F0AF2E931E2541F /* App */,
+				43F492DE71B81AFA93B49159 /* Chat */,
+				719EE1D390EBA7B93B8DA3CF /* Components */,
+				988404773255C3E959C00922 /* Context */,
+				36E45629E3F0CB41FB99F9C7 /* ImageGen */,
+				FC36AD30D29A86E07F3515A6 /* Memory */,
+				66A1D1058B73FCF272B32561 /* Persona */,
+				C1F850632030BB7CEFC675CA /* Remote */,
+				C8C495704F20D4870C045395 /* Session */,
+				166DD0F83ED0636E3C259032 /* Settings */,
+				A11CE6917B3CBF93002F7812 /* Skills */,
+			);
+			path = MolaGPT;
+			sourceTree = "<group>";
+		};
+		30838ED7DBD27975D528C031 /* Visual */ = {
+			isa = PBXGroup;
+			children = (
+				58EE6BDF6F85E5EFFECE259D /* HtmlRunner.swift */,
+				CE2F96F0A4AAFFE7839FD916 /* MermaidView.swift */,
+				F474A3C8C25FF0B61509BE47 /* VisualViews.swift */,
+			);
+			path = Visual;
+			sourceTree = "<group>";
+		};
+		32236A81AD763C4D244C4F21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95EF97C6938F5845956076EF /* MolaGPTApp.app */,
+				3E35F23B4D807700E4D57528 /* MolaShareExtension.appex */,
+				DE630B8DEDACB979B8B9D5B2 /* MolaWidgetsExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36E45629E3F0CB41FB99F9C7 /* ImageGen */ = {
+			isa = PBXGroup;
+			children = (
+				1E72FE406A8F0C17922305BB /* ImageTaskManager.swift */,
+				619D62D69696D1084690DE40 /* ImageWorkbenchView.swift */,
+			);
+			path = ImageGen;
+			sourceTree = "<group>";
+		};
+		3A2F58EF00EF0915C281B1AF /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				C3EF883C85CB5DBAAC64A0DF /* AccountManager.swift */,
+				66140AC23D2B85C1E99E17E9 /* AccountView.swift */,
+				EDE5AE2928B2C5911FEC6F01 /* MolaChatService.swift */,
+				41761AB5D6B13D47CF837A3F /* MolaSession.swift */,
+				A1561962B52AFB4E401EF2A7 /* PersonalizationView.swift */,
+				8148F68BC57C01B3FA1D7D9C /* SyncService.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		3B45EDF2A5E54A25F35A7C67 /* MolaGPT */ = {
+			isa = PBXGroup;
+			children = (
+				A9756B568D9717CBD49FF464 /* Resources */,
+				B2BE9119764294ED660F8442 /* Sources */,
+			);
+			name = MolaGPT;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		43F492DE71B81AFA93B49159 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				373E190813DF8FBAED8A5CB7 /* AppToolExecutor.swift */,
+				54F3EA1E2CCCCDF8A111F491 /* ChatController.swift */,
+				AA4B397899A18975334A084C /* ChatView.swift */,
+				4C99D73118F11622F8DE4564 /* ComposerView.swift */,
+				20A704DE250EC55A214425A5 /* MessageViews.swift */,
+				B482DBF61A4DC787B7DF3A91 /* ToolViews.swift */,
+				7DF1513617738C40349D6202 /* TurnPlanner.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		4857F0ED7B38E258CB16C5A8 = {
+			isa = PBXGroup;
+			children = (
+				3B45EDF2A5E54A25F35A7C67 /* MolaGPT */,
+				EB19C7E82CF1489E4443C75A /* Packages */,
+				32236A81AD763C4D244C4F21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66A1D1058B73FCF272B32561 /* Persona */ = {
+			isa = PBXGroup;
+			children = (
+				587FF1874223A12A58134BF8 /* PersonaViews.swift */,
+				ED05F9F68FF4F0FEA8A8F60D /* RoleEngine.swift */,
+			);
+			path = Persona;
+			sourceTree = "<group>";
+		};
+		6743E6075324BBAF3DA31D0E /* MolaWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				96E963FA6BE40D6E646CF122 /* MolaLiveActivity.swift */,
+			);
+			path = MolaWidgets;
+			sourceTree = "<group>";
+		};
+		719EE1D390EBA7B93B8DA3CF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				30838ED7DBD27975D528C031 /* Visual */,
+				8FEF8E8BE7FFAB91A1197BF8 /* Attachments.swift */,
+				F50DCB73B6C39D4B26AAB33A /* MarkdownView.swift */,
+				742835B1FF7BCAE26F9A228A /* MathRenderer.swift */,
+				75CEAB011E48A5B82DBFA366 /* MiniZip.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7CD2D7744F0AF2E931E2541F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				51ECCC212543DB879329D6DC /* AppModel.swift */,
+				4F5CF6E35C335C1E96A0ADB5 /* BackgroundGuard.swift */,
+				34A902878E0348C2DFFA1491 /* LaunchPermissions.swift */,
+				11A12FE5C52437D1A12CE8EE /* LinkOpener.swift */,
+				19AE8F8FAA9053B0876F7DE4 /* LiveActivityCenter.swift */,
+				6DD37F7A8452C7E2C645D12F /* MolaGPTApp.swift */,
+				8D674AF536B7D9CC8C489334 /* Notices.swift */,
+				6C7477CB7716B077E1391671 /* RootView.swift */,
+				8E841223B64B851F0EC5AAF6 /* ShareImporter.swift */,
+				FAE3E3128E17E48E3BC9F144 /* Theme.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		988404773255C3E959C00922 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				25B0F6394BAB2A64E767BC1C /* CompactionService.swift */,
+				52ABE5C56A4820B75E69BB86 /* ContextGaugeView.swift */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		A11CE6917B3CBF93002F7812 /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				9AAA0E3DF8A2570480A62702 /* SkillService.swift */,
+				45278FB38BD7449D4B535B58 /* SkillsView.swift */,
+			);
+			path = Skills;
+			sourceTree = "<group>";
+		};
+		A7980CA6A730AECEB9FF2C17 /* MolaShare */ = {
+			isa = PBXGroup;
+			children = (
+				75142193CC61E0A0AD50030A /* Entry.swift */,
+				CAE39C1A4189CC32AB1C4536 /* ShareViewController.swift */,
+			);
+			path = MolaShare;
+			sourceTree = "<group>";
+		};
+		A9756B568D9717CBD49FF464 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2FC8B3C8DB0A440278F3715 /* Icons */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2BE9119764294ED660F8442 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				26E9519EEE3EDC6B12AF6163 /* MolaGPT */,
+				A7980CA6A730AECEB9FF2C17 /* MolaShare */,
+				6743E6075324BBAF3DA31D0E /* MolaWidgets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B2FC8B3C8DB0A440278F3715 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				627C5D51EC66E68E81C3CA6F /* AppIcon60x60@2x.png */,
+				623616E1BBE35CA411004EAD /* AppIcon60x60@3x.png */,
+				9AB4A79F0708210A1DFFAE8E /* AppIcon76x76@2x~ipad.png */,
+				3A67CD7A19D05E7764E2769C /* AppIcon76x76~ipad.png */,
+				4570F5DC608A37E3D23A87F0 /* AppIcon83.5x83.5@2x~ipad.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		C1F850632030BB7CEFC675CA /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				51FAED631851A1A5AA671351 /* AgentControlViews.swift */,
+				518CF25F5FB82DBF38865977 /* DesktopRemoteService.swift */,
+				7879B0BA640A567CF9122B38 /* DesktopsView.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		C8C495704F20D4870C045395 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				3248ECA584A811AC76A44B70 /* ConversationListView.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		EB19C7E82CF1489E4443C75A /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				956D150D948FAC58B19AC28E /* MolaGPT */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		FC36AD30D29A86E07F3515A6 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				35462C8C9056A42B260A8967 /* MemoryService.swift */,
+				A1E317280CD8686DE9F6E293 /* MemorySettingsView.swift */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30BB2FD8F092ABEF787C76A0 /* MolaGPTApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA7AD7523F526883E1795CAA /* Build configuration list for PBXNativeTarget "MolaGPTApp" */;
+			buildPhases = (
+				C3CCD968FA26CF86701C8644 /* Sources */,
+				4B2840BB206A6D61AF3E3561 /* Resources */,
+				75F187795AF6A27C58E0CA5B /* Frameworks */,
+				BA0BDF5723C786646CD0D4E0 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64FAF50F67562C8E839388B8 /* PBXTargetDependency */,
+				9F0F83F25408AC038D915339 /* PBXTargetDependency */,
+			);
+			name = MolaGPTApp;
+			packageProductDependencies = (
+				CEFFD5DA182842155C5DBB12 /* MolaCore */,
+				777C0C0BC971FEA37B6D09E3 /* MolaStorage */,
+				636A13E3CF4BBA6D251CE84A /* MolaActivity */,
+				48CF9F950C8001F7FC9B91A7 /* SwiftMath */,
+			);
+			productName = MolaGPTApp;
+			productReference = 95EF97C6938F5845956076EF /* MolaGPTApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44A02C434DE34F5C9151F20F /* MolaShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD883EEFCAF45769ABA9FE2 /* Build configuration list for PBXNativeTarget "MolaShareExtension" */;
+			buildPhases = (
+				01A33862773B39CC30A323E7 /* Sources */,
+				A7F590D267D5E58AE2F66FE9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MolaShareExtension;
+			packageProductDependencies = (
+				41E3F9C9E3B917C6F7A4AF34 /* MolaCore */,
+			);
+			productName = MolaShareExtension;
+			productReference = 3E35F23B4D807700E4D57528 /* MolaShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CCDE181C43763F2955E634FA /* MolaWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EC19EC7FBE847935D7BBC08 /* Build configuration list for PBXNativeTarget "MolaWidgetsExtension" */;
+			buildPhases = (
+				AEDD349F10DBA9125C31E734 /* Sources */,
+				72B10C8A5F762CC65BC02444 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MolaWidgetsExtension;
+			packageProductDependencies = (
+				68946EF40AF0539A01BE3BEF /* MolaActivity */,
+			);
+			productName = MolaWidgetsExtension;
+			productReference = DE630B8DEDACB979B8B9D5B2 /* MolaWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DE8DB6271DA448D319467E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					30BB2FD8F092ABEF787C76A0 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					44A02C434DE34F5C9151F20F = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					CCDE181C43763F2955E634FA = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 520466DF667DEE7D018E3E15 /* Build configuration list for PBXProject "MolaGPT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 4857F0ED7B38E258CB16C5A8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D39923D32751F7679A28DB40 /* XCRemoteSwiftPackageReference "SwiftMath" */,
+				7024A212A19865FD393603BD /* XCLocalSwiftPackageReference ".." */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30BB2FD8F092ABEF787C76A0 /* MolaGPTApp */,
+				44A02C434DE34F5C9151F20F /* MolaShareExtension */,
+				CCDE181C43763F2955E634FA /* MolaWidgetsExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B2840BB206A6D61AF3E3561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011A88256858754842FB485F /* AppIcon60x60@2x.png in Resources */,
+				CEE84D1F6F3A71A3791BCFEF /* AppIcon60x60@3x.png in Resources */,
+				D1DD503E8D99B4B98A595039 /* AppIcon76x76@2x~ipad.png in Resources */,
+				B548DB442D9658E2491808C9 /* AppIcon76x76~ipad.png in Resources */,
+				D46377DD11693AC52E4A68C0 /* AppIcon83.5x83.5@2x~ipad.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01A33862773B39CC30A323E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81B020F141BA99A723490F65 /* Entry.swift in Sources */,
+				ABCF671A00EC0349E6F6FAFE /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDD349F10DBA9125C31E734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F129E298AF44E04F012F5E28 /* MolaLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CCD968FA26CF86701C8644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E222B5266CFFA787C2FB589 /* AccountManager.swift in Sources */,
+				23E6F4EBE78AABCFAE8A6790 /* AccountView.swift in Sources */,
+				8F025B1B9CB24B6EE8B8851D /* AgentControlViews.swift in Sources */,
+				5F31CD8D23A1592CCC575984 /* AppModel.swift in Sources */,
+				2311E3AD3E3D07FC5798D086 /* AppToolExecutor.swift in Sources */,
+				92C922E08E3F3B4AD426290D /* Attachments.swift in Sources */,
+				154E30409FABBDC9C59A9A4F /* BackgroundGuard.swift in Sources */,
+				3D4A056B95FA4A274653056F /* ChatController.swift in Sources */,
+				34231683C81B373E77AD9E24 /* ChatView.swift in Sources */,
+				931BCEE501E458CC816D3AFC /* CompactionService.swift in Sources */,
+				3A845B0596A49992ED957C30 /* ComposerView.swift in Sources */,
+				0F34A670246F585AC4C232C6 /* ContextGaugeView.swift in Sources */,
+				B725385CBEA67C48B45E4D50 /* ConversationListView.swift in Sources */,
+				C1CF048FEB49CCDFB0BE77D9 /* DesktopRemoteService.swift in Sources */,
+				6FA1C29E47A24D2EE954CDE4 /* DesktopsView.swift in Sources */,
+				6B3D6D3B8A544ECF4BD1C861 /* HtmlRunner.swift in Sources */,
+				0E11C1CFB5CCB3B1253C4D37 /* ImageTaskManager.swift in Sources */,
+				9DC9CD22737B0BD777CEB6FB /* ImageWorkbenchView.swift in Sources */,
+				8D4B0C1301F36F45E19E5105 /* LaunchPermissions.swift in Sources */,
+				F9D1CA5225D4E9C25BCB8974 /* LinkOpener.swift in Sources */,
+				D3DF5428EEE0122B7BD47C75 /* LiveActivityCenter.swift in Sources */,
+				63651D5D70E1AC6E3271192D /* MarkdownView.swift in Sources */,
+				747C55B0A42D2CC6CEC7D18E /* MathRenderer.swift in Sources */,
+				58F8E8A319387910617AB3B3 /* MemoryService.swift in Sources */,
+				355A3939FD8069C6AE3B301E /* MemorySettingsView.swift in Sources */,
+				27BEE233E5B6E2DE687DE9DA /* MermaidView.swift in Sources */,
+				B093AD5D8A6CF8A43C1D7537 /* MessageViews.swift in Sources */,
+				469E62ED05F14DCDBDC82276 /* MiniZip.swift in Sources */,
+				FFCE0D204080543124120338 /* ModelEditView.swift in Sources */,
+				731974726CAFBF4077D8ECCC /* ModelPricingFetch.swift in Sources */,
+				49819E2548CBE25A47FFE8CE /* MolaChatService.swift in Sources */,
+				E5C644711172A35A34090F93 /* MolaGPTApp.swift in Sources */,
+				A8B22CDF9937244E8FFE71D8 /* MolaSession.swift in Sources */,
+				28E666748D2483836032AC2A /* Notices.swift in Sources */,
+				E9FB02429E89F684077579FB /* PersonaViews.swift in Sources */,
+				FD1ADBA72EEAC2ED7770A102 /* PersonalizationView.swift in Sources */,
+				5FF8D5E8A4FD051EF0C7E998 /* ProvidersView.swift in Sources */,
+				16D62B8EB14A734EE8E9981F /* RoleEngine.swift in Sources */,
+				FD4A4970361B013E53594E58 /* RootView.swift in Sources */,
+				594380CD0DD2119957385C6F /* SettingsView.swift in Sources */,
+				2A48BC002B42C20BED18BD4B /* ShareImporter.swift in Sources */,
+				517FD6F8DD0290E0A3B1411B /* SkillService.swift in Sources */,
+				B85EA5065BF141798B5A005F /* SkillsView.swift in Sources */,
+				46AB84503F739133845A2D89 /* SyncService.swift in Sources */,
+				F7FCD188E97152D464D88CC2 /* Theme.swift in Sources */,
+				C1E497CD6437F39686177D53 /* ToolViews.swift in Sources */,
+				5FA90C47627B307E8805FA37 /* ToolsSettingsView.swift in Sources */,
+				8CBB45B39A0AE460F9486D33 /* TurnPlanner.swift in Sources */,
+				E8AF29273501ADD53182DEA1 /* VisualViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64FAF50F67562C8E839388B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44A02C434DE34F5C9151F20F /* MolaShareExtension */;
+			targetProxy = 7CBBA707C2D510CEC13F3306 /* PBXContainerItemProxy */;
+		};
+		9F0F83F25408AC038D915339 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCDE181C43763F2955E634FA /* MolaWidgetsExtension */;
+			targetProxy = 43DB19E556FCB24BD7AF24FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2F2A81105204617C30717EBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				INFOPLIST_FILE = "../Resources/MolaWidgets-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.molagpt.app.MolaWidgets;
+				PRODUCT_MODULE_NAME = MolaWidgetsExtension;
+				PRODUCT_NAME = MolaWidgets;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) XCODE_BUILD";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AB176219EB9A9761CBD6584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ../Resources/MolaGPT.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ../Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.molagpt.app;
+				PRODUCT_MODULE_NAME = MolaGPTApp;
+				PRODUCT_NAME = MolaGPT;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F2A6191D7457A9445162E8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6251970571C6ED5C82F49624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ../Resources/MolaGPT.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ../Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.molagpt.app;
+				PRODUCT_MODULE_NAME = MolaGPTApp;
+				PRODUCT_NAME = MolaGPT;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E7E006D431B1F2F8DE8D5AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				INFOPLIST_FILE = "../Resources/MolaWidgets-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.molagpt.app.MolaWidgets;
+				PRODUCT_MODULE_NAME = MolaWidgetsExtension;
+				PRODUCT_NAME = MolaWidgets;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) XCODE_BUILD";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A44AF58AD3BB6302F9258694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B70C26476616C90393020436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = ../Resources/MolaShare.entitlements;
+				INFOPLIST_FILE = "../Resources/MolaShare-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.molagpt.app.MolaShare;
+				PRODUCT_MODULE_NAME = MolaShareExtension;
+				PRODUCT_NAME = MolaShare;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD6061EF141B3C91F98E04A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = ../Resources/MolaShare.entitlements;
+				INFOPLIST_FILE = "../Resources/MolaShare-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.molagpt.app.MolaShare;
+				PRODUCT_MODULE_NAME = MolaShareExtension;
+				PRODUCT_NAME = MolaShare;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		520466DF667DEE7D018E3E15 /* Build configuration list for PBXProject "MolaGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F2A6191D7457A9445162E8B /* Debug */,
+				A44AF58AD3BB6302F9258694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5EC19EC7FBE847935D7BBC08 /* Build configuration list for PBXNativeTarget "MolaWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2A81105204617C30717EBA /* Debug */,
+				7E7E006D431B1F2F8DE8D5AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EA7AD7523F526883E1795CAA /* Build configuration list for PBXNativeTarget "MolaGPTApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6251970571C6ED5C82F49624 /* Debug */,
+				5AB176219EB9A9761CBD6584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FBD883EEFCAF45769ABA9FE2 /* Build configuration list for PBXNativeTarget "MolaShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD6061EF141B3C91F98E04A8 /* Debug */,
+				B70C26476616C90393020436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		7024A212A19865FD393603BD /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D39923D32751F7679A28DB40 /* XCRemoteSwiftPackageReference "SwiftMath" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mgriebling/SwiftMath";
+			requirement = {
+				kind = exactVersion;
+				version = 1.7.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41E3F9C9E3B917C6F7A4AF34 /* MolaCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MolaCore;
+		};
+		48CF9F950C8001F7FC9B91A7 /* SwiftMath */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D39923D32751F7679A28DB40 /* XCRemoteSwiftPackageReference "SwiftMath" */;
+			productName = SwiftMath;
+		};
+		636A13E3CF4BBA6D251CE84A /* MolaActivity */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MolaActivity;
+		};
+		68946EF40AF0539A01BE3BEF /* MolaActivity */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MolaActivity;
+		};
+		777C0C0BC971FEA37B6D09E3 /* MolaStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MolaStorage;
+		};
+		CEFFD5DA182842155C5DBB12 /* MolaCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MolaCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9DE8DB6271DA448D319467E3 /* Project object */;
+}
