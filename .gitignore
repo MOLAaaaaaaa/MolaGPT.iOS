@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# SwiftPM / xtool
+/.build
+/Packages
+/xtool
+/dist
+.swiftpm/
+*.ipa
+
+# Xcode（Xcode/MolaGPT.xcodeproj 由 Xcode/project.yml 生成）
+xcuserdata/
+DerivedData/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# 本地凭据
+.netrc
+.env
