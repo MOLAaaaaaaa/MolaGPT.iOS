@@ -1,0 +1,21 @@
+version: 1
+bundleID: com.molagpt.app
+product: MolaGPT
+iconPath: Resources/AppIcon.png
+infoPath: Resources/Info.plist
+# 标准尺寸图标（Info.plist CFBundleIcons 引用；签名软件与主屏都按这些文件名取图标）
+resources:
+  - Resources/Icons/AppIcon60x60@2x.png
+  - Resources/Icons/AppIcon60x60@3x.png
+  - Resources/Icons/AppIcon76x76~ipad.png
+  - Resources/Icons/AppIcon76x76@2x~ipad.png
+  - Resources/Icons/AppIcon83.5x83.5@2x~ipad.png
+entitlementsPath: Resources/MolaGPT.entitlements
+extensions:
+  # 分享扩展：bundle ID 默认为 com.molagpt.app.MolaShare，与主 App 共用 App Group 传递分享内容
+  - product: MolaShare
+    infoPath: Resources/MolaShare-Info.plist
+    entitlementsPath: Resources/MolaShare.entitlements
+  # 实时活动 / 灵动岛（WidgetKit 扩展）
+  - product: MolaWidgets
+    infoPath: Resources/MolaWidgets-Info.plist
